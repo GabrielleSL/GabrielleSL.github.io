@@ -1,13 +1,15 @@
-let state = 0 // 0=closed 1=opened
+$("#home_b").click(function(){
+  location.href = "index.html"
+})
 
-$("#ham_nav").click(function(){
-  if(state == 0){
-    document.getElementById("bars").classList.replace("fa-bars", "fa-close");
-    document.getElementById("slide-out").style.display = "block"
-    state = 1;
-  } else if(state == 1){
-    document.getElementById("bars").classList.replace("fa-close", "fa-bars");
-    document.getElementById("slide-out").style.display = "none"
-    state = 0;
-  }
+$("#edu_b").click(function(){
+  location.href = "edu_work.html"
+})
+
+$("#proj_b").click(function(){
+  location.href = "projects.html"
+})
+
+$("#cont_b").click(function(){
+  location.href = "contact.html"
 })
